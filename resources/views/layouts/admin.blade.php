@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SeyGens | Dashboard</title>
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -25,14 +27,27 @@
     <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('plugins/summernote/summernote-bs4.min.css') }}">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="{{ URL::asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+
+
+
+    <style>
+        nav ul .nav-item .active {
+            background-color: #FF2768 !important;
+        }
+    </style>
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
     <!-- Preloader -->
-    <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
-    </div>
+{{--    <div class="preloader flex-column justify-content-center align-items-center">--}}
+{{--        <img class="animation__shake" src="{{asset('dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">--}}
+{{--    </div>--}}
 
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -42,7 +57,7 @@
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
             </li>
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="index3.html" class="nav-link">Dashboard</a>
+                <a href="#" class="nav-link">Dashboard</a>
             </li>
         </ul>
 
@@ -122,7 +137,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4"
            style="background-color: #153749; border-radius: 10px">
         <!-- Brand Logo -->
-        <a href="index3.html" class="brand-link">
+        <a href="#" class="brand-link">
             <!--      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">-->
             <span class="ml-5 brand-text font-weight-light">SEYGENS</span>
         </a>
@@ -142,10 +157,9 @@
             <!-- Sidebar Menu -->
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <!-- Add icons to the links using the .nav-icon class
-                         with font-awesome or any other icon font library -->
+
                     <li class="nav-item menu-open">
-                        <a href="#" class="nav-link active">
+                        <a href="dashboard" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Dashboard
@@ -155,7 +169,7 @@
 
                     </li>
                     <li class="nav-item">
-                        <a href="pages/widgets.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon mr-4">C</i>
                             <p>
                                 Classes
@@ -171,7 +185,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="studentView" class="nav-link">
                             <i class="nav-icon mr-4"> S</i>
                             <p>
                                 student
@@ -216,7 +230,7 @@
                     <hr class="" style="background-color: white; width: 240px">
                     <li class="nav-header">Setting</li>
                     <li class="nav-item">
-                        <a href="pages/calendar.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon far fa-calendar-alt"></i>
                             <p>
                                 Profile Setting
@@ -224,7 +238,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/gallery.html" class="nav-link">
+                        <a href="#" class="nav-link">
                             <i class="nav-icon far fa-image"></i>
                             <p>
                                 Payment Setting
@@ -239,7 +253,7 @@
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+    <div class="content-wrapper" style="background-color: #ffffff">
 
         @yield('content')
 
@@ -262,6 +276,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
@@ -295,5 +310,10 @@
 <script src="{{asset('dist/js/demo.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
+
+<section>
+    @yield('import_script')
+</section>
+
 </body>
 </html>

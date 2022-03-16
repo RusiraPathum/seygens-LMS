@@ -8,6 +8,11 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
+                    @isset($loginError)
+                        <span class="">
+                            <strong>dddddd</strong>
+                        </span>
+                    @endisset
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
