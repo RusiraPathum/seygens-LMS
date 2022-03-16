@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\teacher\PaymentController;
+use App\Http\Controllers\teacher\StudentController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -19,7 +21,7 @@ use App\http\controllers\UserController;
 
 //Base url
 Route::get('/', function () {
-    return view('welcome');
+    return view('home1');
 });
 
 //Middleware routes
@@ -41,7 +43,13 @@ Route::group(['prefix'=>'teacher', 'middleware'=>['isTeacher', 'auth', 'PreventB
 
     //Teacher dashboard
     Route::get('dashboard', [TeacherController::class, 'index'])->name('teacher.dashboard');
+    Route::get('studentView', [StudentController::class, 'index'])->name('teacher.studentView');
+    Route::get('/pendingPayment', [PaymentController::class, 'index']);
+
 });
+
+//Get signal student
+Route::get('/getSignalStudent/{id}', [StudentController::class, 'getSignalStudent']);
 
 //User routes
 Route::group(['prefix'=>'user', 'middleware'=>['isUser', 'auth', 'PreventBackHistory']], function (){

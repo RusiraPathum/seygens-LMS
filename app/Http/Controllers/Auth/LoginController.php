@@ -76,12 +76,11 @@ class LoginController extends Controller
 
                 return redirect()->route('teacher.dashboard');
 
-            }else{
-
-                return redirect()->route('login')->with('error', 'Email and Password are wrong');
-
             }
 
+        }else{
+//            return redirect()->route('login')->with('loginError', 'Email and Password are wrong');
+            return view('auth/login')->with('loginError', 'Email and Password are wrong');
         }
 
     }
