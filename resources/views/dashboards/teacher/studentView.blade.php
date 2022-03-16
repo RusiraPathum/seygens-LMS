@@ -43,7 +43,7 @@
                                             <td>{{$student->email}}</td>
                                             <td>
 {{--                                                <input type="button" style="background-color: #189AB4; color: white" class="btn" id="{{$student->id}}" onclick="viewStudentProfile({{$student->id}});" value="View Profile">--}}
-                                                <a href="/getSignalStudent/{{Crypt::encrypt($student->id)}}" >View</a>
+                                                <a href="/getSignalStudent/{{Crypt::encrypt($student->id)}}" class="btn" style="background-color: #189AB4; color: white" >View Profile</a>
                                             </td>
                                         </tr>
                                     @endforeach

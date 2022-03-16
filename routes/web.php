@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\teacher\PaymentController;
 use App\Http\Controllers\teacher\StudentController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Auth;
@@ -43,7 +44,7 @@ Route::group(['prefix'=>'teacher', 'middleware'=>['isTeacher', 'auth', 'PreventB
     //Teacher dashboard
     Route::get('dashboard', [TeacherController::class, 'index'])->name('teacher.dashboard');
     Route::get('studentView', [StudentController::class, 'index'])->name('teacher.studentView');
-//    Route::get('/getSignalStudent/{studentId}', [StudentController::class, 'getSignalStudent'])->name('student.get');
+    Route::get('/pendingPayment', [PaymentController::class, 'index']);
 
 });
 

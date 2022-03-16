@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
@@ -194,7 +195,7 @@
                     </li>
                     <li class="nav-header">Payment</li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="pendingPayment" class="nav-link">
                             <i class="nav-icon fas fa-tree mr-3"></i>
                             <p>
                                 Pending
@@ -258,14 +259,9 @@
         @yield('content')
 
     </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-        All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 3.2.0
-        </div>
-    </footer>
+
+    <!-- /.content-footer -->
+{{--    @include('layouts.footer');--}}
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">

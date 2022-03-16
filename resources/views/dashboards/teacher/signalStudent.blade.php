@@ -27,7 +27,7 @@
         <div class="container-fluid">
 
             <div class="row">
-                <div class="col-md-12 col-lg-3 col-sm-12">
+                <div class="col-md-12 col-lg-4 col-sm-12">
 
                     <div class="card">
                         <div class="card-body box-profile">
@@ -78,78 +78,90 @@
 
                 </div>
 
-                <div class="col-md-12 col-lg-9 col-sm-12">
+                <div class="col-md-12 col-lg-8 col-sm-12">
+                    <div class="row d-flex justify-content-end mb-5 mr-2">
+                        <button class="btn float-right" style="background-color: #6676E1; color: white"><i class="fas fa-plus"></i>Give Free Class</button>
+                    </div>
                     <div class="row">
-                        <div class="col-lg-4 col-12" >
+                        <div class="col-lg-6 col-12" >
                             <div class="small-box bg-light">
-
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-6">
                                         <div class="ml-3 mt-3" style="width: 80px; height: 80px; border-radius: 20px; background-color: #1f9bc7">
                                             <div class="d-flex justify-content-center" style="padding-top: 25px">
                                                 <i class="text-light fas fa-edit"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12 text-left mt-3" style="padding: 10px">
+                                    <div class="col-lg-6 col-6 text-left mt-3" style="padding: 10px">
                                         <h5 class="mr-2 text-bold">Grade 11 - O/L</h5>
                                     </div>
                                 </div>
-{{--                                <hr>--}}
-                                <div class="pl-4 pt-2 pb-1">
-                                    <p>C - 01 Mathematics</p>
-                                    <p>Grade 11 - O/L</p>
-                                    <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
-                                    <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                <div class="pl-4 pt-2 pb-1 row">
+                                    <div class="col-6">
+                                        <p>C - 01 Mathematics</p>
+                                        <p>Grade 11 - O/L</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
+                                        <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                    </div>
                                     <button class="btn mb-2" type="button" style="background-color: #6676E1; color: white">View Class</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-12" >
+                        <div class="col-lg-6 col-12" >
                             <div class="small-box bg-light">
 
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-6">
                                         <div class="ml-3 mt-3" style="width: 80px; height: 80px; border-radius: 20px; background-color: #1f9bc7">
                                             <div class="d-flex justify-content-center" style="padding-top: 25px">
                                                 <i class="text-light fas fa-edit"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12 text-left mt-3" style="padding: 10px">
+                                    <div class="col-lg-6 col-6 text-left mt-3" style="padding: 10px">
                                         <h5 class="mr-2 text-bold">Grade 10</h5>
                                     </div>
                                 </div>
-                                <div class="pl-4 pt-2 pb-1">
-                                    <p>C - 01 Mathematics</p>
-                                    <p>Grade 10</p>
-                                    <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
-                                    <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                <div class="pl-4 pt-2 pb-1 row">
+                                    <div class="col-6">
+                                        <p>C - 01 Mathematics</p>
+                                        <p>Grade 11 - O/L</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
+                                        <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                    </div>
                                     <button class="btn mb-2" type="button" style="background-color: #6676E1; color: white">View Class</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-12" >
+                        <div class="col-lg-6 col-12" >
                             <div class="small-box bg-light">
 
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-6">
                                         <div class="ml-3 mt-3" style="width: 80px; height: 80px; border-radius: 20px; background-color: #1f9bc7">
                                             <div class="d-flex justify-content-center" style="padding-top: 25px">
                                                 <i class="text-light fas fa-edit"></i>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12 text-left mt-3" style="padding: 10px">
+                                    <div class="col-lg-6 col-6 text-left mt-3" style="padding: 10px">
                                         <h5 class="mr-2 text-bold">Grade 09</h5>
                                     </div>
                                 </div>
-{{--                                <hr>--}}
-                                <div class="pl-4 pt-2 pb-1">
-                                    <p>C - 01 Mathematics</p>
-                                    <p>Grade 09L</p>
-                                    <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
-                                    <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                <div class="pl-4 pt-2 pb-1 row">
+                                    <div class="col-6">
+                                        <p>C - 01 Mathematics</p>
+                                        <p>Grade 11 - O/L</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Saturday<span class="text-success ml-5">5.30 PM</span></p>
+                                        <p>Sunday<span class="text-success ml-5">5.30 PM</span></p>
+                                    </div>
                                     <button class="btn mb-2" type="button" style="background-color: #6676E1; color: white">View Class</button>
                                 </div>
                             </div>
@@ -158,13 +170,13 @@
                 </div>
             </div>
 
-            <div class="row mb-2">
+            <div class="row mb-5">
                 <div class="col-sm-6">
                     <h1 class="m-0">Papers</h1>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-12">
                     <div class="card" id="card-table">
                         <div class="card-body">
@@ -183,7 +195,7 @@
                                 <tr style="background-color: white; padding-bottom: 50px!important;">
                                     <td>2021.02.07</td>
                                     <td>English 01</td>
-                                    <td>Grade 09</td>
+                                    <td>Grade 11</td>
                                     <td>
                                         <input type="button" style="background-color: #FF0000; color: white" class="btn" id="" value="PDF">
                                         <input type="button" style="background-color: #6676E1; color: white" class="btn" id="" value="Give Marks">
@@ -221,6 +233,7 @@
 
                 </div>
             </div>
+
         </div>
     </section>
 
